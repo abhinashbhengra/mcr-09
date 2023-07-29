@@ -7,6 +7,7 @@ import { WatchLater } from "./pages/WatchLater";
 import { Sidebar } from "./components/Sidebar";
 import { CategoryVideos } from "./components/CategoryVideos";
 import { SingleVideo } from "./components/SingleVideo";
+import { PlaylistVideos } from "./components/PlaylistVideos";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           element={<CategoryVideos />}
         />
         <Route path="/video/:videoId" element={<SingleVideo />} />
+        <Route path="/playlist/:playlistId" element={<PlaylistVideos />} />
       </Routes>
     </div>
   );
