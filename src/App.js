@@ -11,7 +11,7 @@ import { PlaylistVideos } from "./components/PlaylistVideos";
 
 function App() {
   return (
-    <div className="flex px-12 max-h-screen">
+    <div className="flex px-12  max-h-screen">
       <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} />
