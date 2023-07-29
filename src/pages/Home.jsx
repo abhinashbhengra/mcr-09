@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div className="flex flex-wrap px-4 mt-8">
       {categories.map((category) => (
-        <div key={category.id} className="mb-4 p-6 cursor-pointer">
+        <div key={category._id} className="mb-4 p-6 cursor-pointer">
           <img
             src={category.thumbnail}
             alt={category.category}

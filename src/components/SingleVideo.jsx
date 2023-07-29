@@ -26,7 +26,7 @@ export const SingleVideo = () => {
         <p className="text-bold">More Videos:</p>
         <div className="h-screen overflow-scroll">
           {showMoreVideo.map((video) => (
-            <div className="flex gap-2 mb-4">
+            <div key={video._id} className="flex gap-2 mb-4">
               <img src={video.thumbnail} alt={video.title} width={100} />
               <div>
                 <p className="font-bold text-blue-400">{video.title}</p>
