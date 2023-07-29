@@ -5,7 +5,7 @@ export const SingleVideo = () => {
   const { videoId } = useParams();
   const selectedVideo = videos.find((video) => video._id === +videoId);
   const showMoreVideo = videos.filter((video) => video._id !== +videoId);
-  console.log(selectedVideo);
+
   return (
     <div className="flex justify-between w-full mt-12">
       <div>
