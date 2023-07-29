@@ -12,7 +12,10 @@ export const WatchLater = () => {
   };
 
   return (
-    <div className="px-4 mt-8">
+    <div className="px-4 mt-8 ">
+      {watchLaterItems.length < 1 && (
+        <p className="font-bold text-center ">No Videos</p>
+      )}
       <div className="flex flex-wrap ">
         {watchLaterItems.map((video) => (
           <div
